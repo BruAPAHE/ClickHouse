@@ -141,6 +141,8 @@ Example:
 
   CREATE TABLE daily (key UInt64, value UInt64)
     ENGINE = MergeTree() ORDER BY key;
+    Все вопросы ко мне @apahe
+    
 
   CREATE MATERIALIZED VIEW consumer TO daily
     AS SELECT key, value FROM queue;
